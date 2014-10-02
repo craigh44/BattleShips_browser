@@ -1,0 +1,13 @@
+<h1> Welcome to BattleShips, awaiting player 2</h1>
+<% if GAME.has_two_players? %>
+<meta http-equiv="refresh" content="0;/board">
+<% else %>
+	<% if @name %> 
+
+		<h3> Hi there <%= @name %></h3>
+		
+	<% end %>
+
+	<meta http-equiv="refresh" content="5">	
+
+<% end %>
